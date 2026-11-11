@@ -35,7 +35,7 @@ export async function activate(context: vscode.ExtensionContext) {
   }
 
   const workspaceFolders = getWorkspaceFolders();
-  if (!workspaceFolders) {
+  if (!workspaceFolders || workspaceFolders.length === 0) {
     return;
   }
 

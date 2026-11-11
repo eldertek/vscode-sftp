@@ -2,11 +2,14 @@
   "name": "sftp",
   "displayName": "SFTP",
   "description": "SFTP/FTP sync",
-  "version": "1.12.9",
+  "version": "1.13.0",
+  "sponsor": {
+    "url": "https://www.patreon.com/eldertek"
+  },
   "publisher": "liximomo",
   "author": "liximomo <liximomo@gmail.com> (https://liximomo.github.io/)",
   "engines": {
-    "vscode": "^1.30.0"
+    "vscode": "^1.85.0"
   },
   "bugs": {
     "url": "https://github.com/liximomo/vscode-sftp/issues",
@@ -27,6 +30,7 @@
     "remote"
   ],
   "activationEvents": [
+    "onStartupFinished",
     "onCommand:sftp.config",
     "workspaceContains:.vscode/sftp.json"
   ],
